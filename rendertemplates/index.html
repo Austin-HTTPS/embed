@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>
+        Discord Embed Generator
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <script type="text/javascript" src="index.js"></script>
+    <header>
+      <h1>Discord Embed Generator</h1>
+    </header>
+    <div class=center>
+      <p><i>You can leave any value blank if you want.</i></p>
+      <label for="titleinput" class=inputlabel>Embed Title: </label>
+      <br>
+      <input type="text" id="titleinput" placeholder="Title" class=input>
+      <br>
+      <label for="descriptioninput">Embed Description: </label>
+      <br>
+      <input type="text" id="descriptioninput" placeholder="Description" class=input>
+      <br>
+      <label for="colorinput">Embed Color: </label>
+      <br>
+      <input type="text" id="colorinput" placeholder="Hex Code" onchange="colorTyped()" class="input">
+      <input type="color" id="colorpicker" value="#000002" onchange="colorPicked()" class="input colorinput" style="display: inline;>
+      <br>
+      <label for="redirectinput" >Link Redirect: </label>
+      <br>
+      <input type="text" id="redirectinput" placeholder="Link, including http(s)://" class=input>
+      <br>
+      <br>
+      <button id="generatebutton" onclick="generate()" class=button>Generate</button>
+      <br>
+      <br>
+      <label for=link>Output link:</label>
+      <input id=link class=input>
+    </div>
+</body>
+</html>
